@@ -1,0 +1,36 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none",
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "xprotocol"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 33060,
+      "driver": "MySQL",
+      "name": "KAKAIRE",
+      "database": "sakila",
+      "username": "kakaire",
+      "password": "kakaire",
+      "connectionTimeout": 60
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "xprotocol"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 33060,
+      "driver": "MySQL",
+      "name": "kakaire",
+      "database": "pages",
+      "username": "kakaire",
+      "password": "kakaire",
+      "connectionTimeout": 100
+    }
+  ]
+}

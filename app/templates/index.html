@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block title %}Pages{% endblock title %}
+
+<body>
+  {% block pageContent %}
+  <div class="login-page">
+    <div class="form">
+      <form action="" method="post" class="register-form">
+        <input type="text" placeholder="name" />
+        <input type="text" placeholder="email" />
+        <input type="password" placeholder="password" />
+        <input type="password" placeholder="Repeat password" />
+        <input type="submit" name="Submit" value="Submit" />
+
+        <p class="message">
+          Already registered?
+          <a href="#">Sign In</a>
+        </p>
+      </form>
+      <form class="login-form" method="post">
+        <input type="text" name='email' placeholder="email" />
+        <input type="password" name='password' placeholder="password" />
+        <input type="submit" name="Submit" value="Submit" />
+
+        <p class="message">
+          Not registered?
+          <a href="#">Create an account</a>
+        </p>
+      </form>
+    </div>
+  </div>
+  {% endblock pageContent %}
+</body>
+
+{% block script %}
+<script src="static/scripts.js"></script>
+{% endblock script %}

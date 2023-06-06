@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title %}Pages Register{% endblock title %} {%
+block pageContent %}
+<form method="POST">
+  <label for="email">Email</label>
+  <input name="email" id="email" />
+
+  <label for="surname">Username</label>
+  <input name="surname" id="surname" />
+
+  <label for="first_name">First Name</label>
+  <input type="first_name" name="first_name" id="first_name" />
+
+  <label for="date_of_birth">Date of birth</label>
+  <input name="date_of_birth" id="date_of_birth" />
+
+  <label for="country">Country</label>
+  <input name="country" id="country" />
+
+  <input type="submit" name='Submit' value="Submit"/>
+</form>
+{% endblock pageContent %} {% block script %}
+<script src="static/scripts.js"></script>
+{% endblock script %}
